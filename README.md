@@ -31,3 +31,71 @@ This project showcases an **end-to-end mini-demo** of fine-tuning a small open-w
 ├── eval_dynamic.md # Dynamic evaluation with scores<br>
 ├── report.md # One-page project report<br>
 └── README.md # This file<br>
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/yourusername/cli-agent-lora.git
+cd cli-agent-lora
+```
+
+### 2. Set up Environment
+
+```bash
+pip install -r requirements.txt
+# or install manually:
+pip install transformers datasets peft accelerate trl bitsandbytes
+```
+
+### 3. Prepare Data
+
+```bash
+python preprocess_data.py
+```
+
+### 4. Run Fine-Tuning (in Colab)
+ - Open and run `finetune_lora_colab.ipynb`. It will:
+ - Load the dataset
+ - Fine-tune `TinyLlama-1.1B` using LoRA
+ - Save the adapter in `lora_adapter/`
+
+---
+
+## 🧪 Run the Agent
+
+```bash
+python agent.py "Create a new Git branch and switch to it"
+```
+ - Output: A step-by-step plan
+ - Dry-run any command it generates
+ - Logs to: `logs/trace.jsonl`
+
+---
+
+## 📊 Evaluation
+ - `eval_static.md`: compares outputs of base vs. fine-tuned model on 5+ test prompts with BLEU/ROUGE-L metrics.
+ - `eval_dynamic.md`: live evaluation of agent with 0–2 plan quality scoring.
+
+---
+
+## 📄 Report Highlights
+ - Dataset: 200 CLI Q&A pairs from cli-commands-explained(https://huggingface.co/datasets/vaibhav/cli-commands-explained)
+ - Model: TinyLlama/TinyLlama-1.1B-Chat(https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+ - Fine-Tuning: 1 epoch with LoRA (8-rank) on Colab T4
+ - Time: ~20 minutes training
+ - Adapter Size: < 500MB
+
+---
+
+## 📌 Future Improvements
+ - Add real shell execution with sandboxing
+ - Integrate streaming output with agent UI
+
+---
+
+## 🙌 Credits
+Built with ❤️ using Hugging Face Transformers, PEFT, and TRL on Google Colab.
