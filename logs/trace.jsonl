@@ -1,8 +1,0 @@
-{"timestamp": "2025-06-18T18:58:24.075615", "step": "Instruction received", "details": "List all files in the current directory."}
-{"timestamp": "2025-06-18T19:16:59.101516", "step": "Model loading failed", "details": "Error: [WinError 193] %1 is not a valid Win32 application"}
-{"timestamp": "2025-06-18T19:21:20.862549", "step": "Instruction received", "details": "List all files in the current directory."}
-{"timestamp": "2025-06-18T19:21:29.914183", "step": "Model loading failed", "details": "Error: [WinError 193] %1 is not a valid Win32 application"}
-{"timestamp": "2025-06-18T19:22:21.064426", "step": "Instruction received", "details": "List all files in the current directory."}
-{"timestamp": "2025-06-18T19:22:29.606954", "step": "Model loading failed", "details": "Error: [WinError 193] %1 is not a valid Win32 application"}
-{"timestamp": "2025-06-18T19:45:39.955596", "step": "Instruction received", "details": "List all files in the current directory."}
-{"timestamp": "2025-06-18T19:45:39.955596", "step": "CUDA not available", "details": "Model requires CUDA-enabled GPU."}
