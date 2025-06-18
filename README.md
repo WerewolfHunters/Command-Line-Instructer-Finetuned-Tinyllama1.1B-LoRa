@@ -25,9 +25,9 @@ This project showcases an **end-to-end mini-demo** of fine-tuning a small open-w
 │ └── qa_pairs.json # ≥ 150 Q&A pairs for fine-tuning<br>
 ├── logs/<br>
 │ └── trace.jsonl # Dry-run logs from agent<br>
-├── lora_adapter/ # LoRA adapter weights after fine-tuning<br>
-├── preprocess_data.py # Script to generate dataset<br>
-├── finetune_lora_colab.ipynb # Colab notebook for training<br>
+├── tinyllama_finetuned/ # LoRA adapter weights after fine-tuning<br>
+├── Training Notebook/finetune_lora_colab.ipynb # Colab notebook for training<br>
+├── preprocess_data.py # Script to generate dataset<br> 
 ├── eval_static.md # Static model evaluation<br>
 ├── eval_dynamic.md # Dynamic evaluation with scores<br>
 ├── report.md # One-page project report<br>
