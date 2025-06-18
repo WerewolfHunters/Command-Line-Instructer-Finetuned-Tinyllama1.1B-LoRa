@@ -39,8 +39,8 @@ This project showcases an **end-to-end mini-demo** of fine-tuning a small open-w
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/cli-agent-lora.git
-cd cli-agent-lora
+git clone [https://github.com/yourusername/cli-agent-lora.git](https://github.com/WerewolfHunters/Command-Line-Instructer-Finetuned-Tinyllama1.1B-LoRa.git)
+cd Command-Line-Instructer-Finetuned-Tinyllama1.1B-LoRa
 ```
 
 ### 2. Set up Environment
