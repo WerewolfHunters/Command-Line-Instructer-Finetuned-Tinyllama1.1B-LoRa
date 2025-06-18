@@ -1,6 +1,7 @@
 # 🧠 Command-Line Instruction Agent (LoRA Fine-Tuning)
 
 This project showcases an **end-to-end mini-demo** of fine-tuning a small open-weight language model on a curated dataset of CLI-based Q&A pairs using **LoRA**, and deploying it as a command-line agent that generates executable shell plans.
+![image](https://github.com/user-attachments/assets/2d9e4d86-3f69-4cdf-8725-3f42abfc5145)
 
 ---
 
